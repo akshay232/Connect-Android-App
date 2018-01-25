@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <group android:id="@+id/main_menu_home"
+        android:visible="true"
+        >
+
+        <item android:id="@+id/home_menu_setting"
+            android:title="Account Setting"
+            app:showAsAction="collapseActionView">
+        </item>
+        <item android:id="@+id/home_menu_all_users"
+            android:title="All Users"
+            app:showAsAction="collapseActionView">
+        </item>
+        <item android:id="@+id/home_menu_logout"
+            android:title="Log out"
+            app:showAsAction="collapseActionView">
+        </item>
+
+
+
+    </group>
+
+</menu>

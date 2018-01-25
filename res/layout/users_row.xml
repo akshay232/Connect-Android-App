@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/colorAccent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/users_row_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/default_avatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/users_row_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/users_row_status"
+        android:layout_alignTop="@+id/users_row_image"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="104dp"
+        tools:text="Display Name" />
+
+    <TextView
+        android:id="@+id/users_row_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/users_row_name"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/users_row_image"
+        android:text="I'm using Connect"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="53dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_alignStart="@+id/users_row_status"
+        android:layout_below="@+id/users_row_status"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/darker_gray"
+        android:requiresFadingEdge="horizontal"
+        />
+
+</RelativeLayout>
